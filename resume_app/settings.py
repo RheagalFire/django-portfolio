@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v8bzoj5)*&_%x-yy7o*z-2$*m1uuo*hbtb(n)%@bboej@%wkox'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-a-portfolio.herokuapp.com']
 
 
 # Application definition
@@ -120,31 +120,31 @@ USE_TZ = True
 # STATIC_URL='/static/'
 # # Static files (CSS, JavaScript, Images)
 # # https://docs.djangoproject.com/en/3.2/howto/static-files/
-# STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
 STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
-STATIC_TMP = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-os.makedirs(STATIC_TMP, exist_ok=True)
-os.makedirs(STATIC_ROOT, exist_ok=True)
+# os.makedirs(STATIC_TMP, exist_ok=True)
+# os.makedirs(STATIC_ROOT, exist_ok=True)
 
-# MEDIA_URL = "/media/"
-# MEDIA_ROOT = BASE_DIR/ "mediafiles"
+# # MEDIA_URL = "/media/"
+# # MEDIA_ROOT = BASE_DIR/ "mediafiles"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
-MEDIA_TMP = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+# MEDIA_TMP = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
 
-os.makedirs(MEDIA_TMP, exist_ok=True)
-os.makedirs(MEDIA_ROOT, exist_ok=True)
+# os.makedirs(MEDIA_TMP, exist_ok=True)
+# os.makedirs(MEDIA_ROOT, exist_ok=True)
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'media')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+#     os.path.join(BASE_DIR, 'media')
+# ]
 
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 
 
