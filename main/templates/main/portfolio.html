@@ -1,0 +1,81 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+  <div class="innerPageBannerCol">
+    <div class="container">
+      <div class="row g-4 g-md-3  align-items-center">
+        <div class="col-md-6">
+          <div class="bannerContent">
+            <h1 class="xlTitle pb-md-3">See my recent projects below</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="lightBg">
+    <div class="container">
+      <div class="portfolioContentMain">
+        <div class="row g-3 g-md-4 g-lg-5 portfolioRow">
+          <div class="col-md-6 pColMain">
+            <div class="pCol">
+              <p> 
+                <h2><a href="https://github.com/RheagalFire/Malaria_Detection" target="_blank">Malaria Detection App</a></h2>
+                This project demostrates the use of Transfer Learning using VGG Network to classify whether the cell is infected or not.
+                The app was made on Streamlit and has been deployed as a docker wrapper on cloud using two step deployment process.
+                </p>
+                <br>
+                <p>
+                <h2><a href="https://github.com/RheagalFire/Content_Based_Filtering" target="_blank" > Movie Recommendation App</a></h2>
+                This is a deployed app which suggests movies based on the similarity of their content. The similarity metric that was used is cosine similarity.
+                </p>
+                <br>
+                <p>
+                  <h2> <a href="https://github.com/RheagalFire/Book-Recommendation-Engine" target="_blank" >Book Recommendation Engine</a></h2>
+                  Built a book recommendation engine using collaborative filtering technique with k-means clustering.
+                  The similarity in taste of two users is calculated based on the similarity in the rating history of the users.
+                </p>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================================
+End Content
+================================= -->
+{% endblock%}    
